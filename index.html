@@ -1,45 +1,98 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Poo-Language.org</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Avenir Next', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      line-height: 1.5;
+      padding: 1em;
+      margin: 0 auto;
+      max-width: 76rem;
+      color: rgba(255,255,255,.8);
+      background-color: #f40;
+      background-image: linear-gradient(#f40, #f37);
+    }
+    h1 { font-size: 3rem; font-weight: 600 }
+    a {
+      color: rgba(0,0,0,.6);
+      transition: color .1s ease-out;
+      text-decoration: none;
+      background-image: linear-gradient(transparent 50%, rgba(0,0,0,.6) 50%);
+      background-size: 4px 4px;
+      background-position: 0 1.125em;
+      background-repeat: repeat-x;
+    }
+    a:hover {
+      color: white; 
+      background-image: linear-gradient(transparent 50%, white 50%);
+    }
+    pre {
+      font-family: 'Source Code Pro', Consolas, Monaco, monospace;
+      text-transform: none;
+      letter-spacing: 0;
+      padding-top: .25em;
+      padding-bottom: .25em;
+      padding: .25em .75em;
+      overflow-x: scroll;
+      background-color: rgba(0,0,0,.2);
+    }
+    p {text-align: center;}
+    .py2 { padding-top: 2rem; padding-bottom: 5.5rem; }
+    .xs-show { display: none }
+    @media (max-width: 40em) { .xs-show { display: block } }
+  </style>
+</head>
+<body>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <header class="py2">
+    <p>
+      <br class="xs-show">
+      <a href="https://github.com/tenderlove/poo-lang.org">View on Github</a>
+    </p>
+  </header>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <style>
-h1 {
-  text-align: center;
-  font-size: 129pt;
-}
+  <section class="py2">
+    <div data-fitter-happier-text class="">poo-lang.org</div>
+    <div data-fitter-happier-text class="">An Adequate website, for poo-language.</div>
+    
+  </section>
+  </section>
 
-footer {
-  text-align: center;
-}
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <footer class="py2">
+    <p>
+      <br class="xs-show">
+      Made by
+      <a href="http://twitter.com/tenderlove">@tenderlove</a>
+    </p>
+  </footer>
 
-        <!-- Add your site or application content here -->
-        <h1>💩-lang.org</h1>
-        <footer>
-          An <a href="http://adequatehq.com">Adequate</a> website, for a 💩 language.
-        </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+  <script src="js/fitter-happier-text.js"></script>
+  <script>
+    var nodes = document.querySelectorAll('[data-fitter-happier-text]');
+    fitterHappierText(nodes, { baseline: 16 });
+  </script>
+  <script type="text/javascript">
+    WebFontConfig = { google: { families: [ 'Source+Code+Pro::latin' ] } };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+    <!--
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
+    -->
+
+</body>
 </html>
