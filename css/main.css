@@ -302,3 +302,16 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/* Emoji SVGs */
+h1 img { 
+  height: 170px;
+  width: 170px;
+  vertical-align: text-top;  
+}
+
+footer img { 
+  height: 23px;
+  width: 23px;
+  vertical-align: text-bottom;  
+}
